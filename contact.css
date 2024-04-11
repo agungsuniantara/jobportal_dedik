@@ -1,0 +1,551 @@
+.header{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center; 
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Poppins';
+    background-color: black;
+  } 
+  .header button:hover{
+    opacity: 0.8;
+   
+  } 
+  .header input{
+    border: none;
+    outline: none;
+   
+  } 
+  button{
+    outline: none;
+    border: none;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    opacity: none;
+}
+.header a{
+    width: 180px;
+}
+  
+  
+  .navbar{
+    display: none;
+  }  
+  
+  
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header p:hover {
+  
+    opacity: 0.70;
+    transition: 0.25s;
+  
+  }
+  
+  
+  .header button:hover{
+    opacity: 0.5;
+  }
+  .header button{
+    border-radius: 0px;
+    outline: none;
+  }
+  .background{
+    background-image: linear-gradient(in oklab to bottom, gray,white);
+    width: 100%;
+    padding: 10px;
+   
+   
+  }
+.contact-tittle{
+    background-image: url(GAMBAR/bisnis.png);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8%;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.konten{
+    text-align: center;
+    width: 400px;
+    margin-bottom: 60px;
+    font-size: 18pt;
+   
+}
+.contact{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+.message{
+    margin: 0px;
+    color: black;
+}
+.div-pesan input{
+    padding-bottom: 120px;
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 20px 20px;
+    background-color: #fff;
+    width: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.div{
+    width: 400px;
+}
+.wrapper{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ 
+
+}
+.div2 img{
+    width: 310px;
+    margin-top: 26px;
+    padding-right: 30px;
+   
+}
+.div3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.div3 input{
+    width: 200px;
+    height: 30px;
+}
+
+.div4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.div4 input{
+    width: 390px;
+    height: 30px;
+}
+
+.div button{
+    background-color: rgb(170, 131, 23) ;
+    border: none;
+    border-radius: 3px;
+    font-size: 12pt;
+    color: #fff;
+    
+}
+
+.div{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.contact1{
+    display: flex;
+    justify-content: center;
+    padding: 0px 250px 0px 250px;
+    gap: 60px;
+    flex-wrap: wrap-reverse;
+
+    
+
+}
+.phone, .email, .address{
+    display: flex;
+    flex-direction: row;
+
+}
+.maps img{
+    width: 600px;
+}
+.isi{
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+footer {
+
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+    font-size: 18px;
+
+    
+    
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
+}
+footer img{
+    width: 300px;
+}
+
+.footer-section {
+
+    margin: 0 0px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.title {
+   
+    display: flex;
+    margin: 0;
+    color: black;
+
+    padding: 0;
+    border-radius: 0px 0px 5px 5px;
+    text-decoration: none;
+    
+    
+ 
+}
+
+section {
+    margin-top: 50px;
+}
+
+
+
+/* ukuran Lptop L */
+@media only screen and (max-width: 1440px){
+ .div1{
+    text-align: center;
+ }
+}
+
+
+/* ukuran tablet */
+@media only screen and (max-width: 728px){
+    .div2 img{
+        width: 200px;
+        height: auto;
+
+    }
+    .div3 input{
+        width: 150px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    }
+    .div4 input{
+        width: 315px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+       
+    }
+    .message{
+        font-size: 10pt;
+
+    }
+    .div button{
+        width: 325px;
+    }
+    .maps img{
+        width: 400px;
+    }
+}
+
+/* ukuran mobile L */
+@media only screen and (max-width: 586px){
+    .div2 img{
+        width: 180px;
+        height: auto;
+
+    }
+    .div3 input{
+        width: 130px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    }
+    .div4 input{
+        width: 275px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+       
+    }
+    .message{
+        font-size: 8pt;
+
+    }
+    .div button{
+        width: 285px;
+    }
+    .maps img{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .div2 img{
+        width: 150px;
+        height: auto;
+
+    }
+    .div1{
+        padding: 50px;
+    }
+    .div3 input{
+        width: 130px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    }
+    .div4 input{
+        width: 275px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+       
+    }
+    .message{
+        font-size: 8pt;
+
+    }
+    .div button{
+        width: 285px;
+    }
+    .maps img{
+        width: 280px;
+    }
+    .contact2{
+        font-size: 8pt;
+    }
+}
+    
+
+
+
+/* ukuran mobile M */
+@media only screen and (max-width: 418px){
+    .div2 img{
+        width: 120px;
+       
+
+    }
+    .div3 input{
+        width: 80px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    }
+    .div4 input{
+        width: 185px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+       
+    }
+    .message{
+        font-size: 8pt;
+
+    }
+    .div button{
+        width: 195px;
+    }
+    .maps img{
+        width: 250px;
+    }
+    .div1{
+        padding: 20px;
+}
+}   
+
+/* ukuran mobile S */
+@media only screen and (max-width: 321px){
+    .div2 img{
+        width: 80px;
+       
+
+    }
+    .div3 input{
+        width: 54px;
+        height: 10px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+
+    }
+    .div4 input{
+        width: 125px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+       
+    }
+    .message{
+        font-size: 6pt;
+
+    }
+    .div button{
+        width: 135px;
+    }
+    .maps img{
+        widows: 250px;
+    }
+    .div1{
+        padding: 10px;
+}
+.wrapper{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+}   
+
+
+
+/* ukuran tablet */
+@media only screen and (max-width: 1130px){
+    .navbar {
+        display: block;
+        
+    } 
+    .container-header{
+        display: none;
+    }  
+    .konten-header{
+        display: none;
+    }
+    .container-header input{
+        display: none;
+
+    }
+    .container-header button{
+        display: none;
+
+    }
+    
+
+}
+
+/* ukuran mobile L */
+@media only screen and (max-width: 426px){
+    
+    .navbar {
+        display: block;
+        
+    }    
+    
+}
+
+
+/* ukuran mobile L */
+@media only screen and (max-width: 426px){
+    
+    .navbar {
+        display: block;
+        
+    }    
+    
+}
+
+
+/* ukuran mobile M */
+@media only screen and (max-width: 376px){
+    .content2{
+        width: auto;
+    }
+    .container-div{
+        margin: auto;
+    }
+    .footer{
+        width: 100%;
+    }
+
+
+}
+
+/* ukuran mobile S */
+@media only screen and (max-width: 321px){
+    .content2{
+        width: auto;
+    }
+
+}
+
+
+
+ /* ukuran tablet */
+ @media only screen and (max-width: 768px){
+    .footer{
+        font-size: 12pt;
+       }
+       .footer img{
+        width: 200px;
+       }
+    }
+ 
