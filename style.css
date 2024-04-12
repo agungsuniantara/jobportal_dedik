@@ -12,6 +12,7 @@
   left: 0;
   width: 100%;
 }
+
 .header button:hover {
   opacity: 0.8;
 }
@@ -28,6 +29,25 @@
 
 .navbar {
   display: none;
+}
+
+.dropdown {
+  margin-top: 92%;
+  width: 100px;
+  margin-right: 80px;
+  position: absolute;
+  display: none;
+}
+
+.dropdown-konten {
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 }
 
 a {
@@ -444,6 +464,11 @@ input {
   width: 50%;
 }
 
+.container-bottom iframe {
+  width: 1000px;
+  height: 576px;
+}
+
 .container-bottom {
   display: flex;
   justify-content: center;
@@ -586,6 +611,9 @@ input {
   }
   .container-header button {
     display: none;
+  }
+  .dropdown.active {
+    display: block;
   }
 }
 

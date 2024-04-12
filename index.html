@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     * {
       font-family: 'Poppins';
@@ -19,8 +20,6 @@
 
 
 <body style="margin: 0px">
-
-
   <div class="header" >
     <div>
       <div style="display: flex ">
@@ -45,7 +44,6 @@
     <div style="display: flex; justify-content: space-around; width: 380px ;">
 
       <div class="container-header">
-        
           <p><a href="home.html">Home</a></p>
         </a>
         <div></div>
@@ -82,6 +80,7 @@
   </button></div>
       
  <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
     
     <div class="konten-header" class="konten-header"><button style="
       background-color: rgb(170, 131, 23);
@@ -92,8 +91,31 @@
     ">
  <a href="register.html"> Register</a>
   </button></div>
+
+  <div class="dropdown">
+  <div class="dropdown-konten">
+  <a href="">Home</a>
+</div>
+<div class="dropdown-konten">
+  <a href="">Find Job</a>
+</div>
+<div class="dropdown-konten">
+  <a href="">About</a>
+</div>
+<div class="dropdown-konten">
+  <a href="">Contact Us</a>
+</div>
+<div class="dropdown-konten">
+  <a href="">Login</a>
+</div>
+<div class="dropdown-konten">
+  <a href="">Register</a>
+</div>
+</div>
   </div>
   </div>
+
+
 
 
 
@@ -119,59 +141,9 @@
     <div class="wrapper">
       <div class="box">
         <div class="card">
-          <input class="search-input" type="text" placeholder="Job title or keyword">
+          <input class="search-input" id="filter-search" type="text" placeholder="Job title or keyword">
           <button class="search-button">Search</button>
-
         </div>
-      </div>
-    </div>
-
-    <div class="filter">
-      <div class="filter-content">
-        <select class="filter-select" name="job-level" id="job-level">
-        <option>Job Level</option>
-        <option>Entry</option>
-        <option>Mid-Senior</option>
-        <option>Supervisor</option>
-        <option>Director</option>
-        </select>
-
-        <select class="filter-select" name="job-level" id="job-level">
-          <option>Job Function</option>
-          <option>IT</option>
-          <option>Accounting</option>
-          <option>Marketing</option>
-        </select>
-
-        <select class="filter-select" name="job-level" id="job-level">
-          <option>Empolyment</option>
-          <option>Intership</option>
-          <option>Full Time</option>
-          <option>Part Time</option>
-        </select>
-
-        
-
-          <select class="filter-select" name="job-level" id="job-level">
-            <option>Location</option>
-            <option>Remote</option>
-            <option>Jakarta</option>
-            <option>Medan</option>
-            <option>Bali</option>
-            <option>Bandung</option>
-            <option>Palembang</option>
-          </select>
-
-          <select class="filter-select" name="job-level" id="job-level">
-            <option>Education</option>
-            <option>SMA</option>
-            <option>SMK</option>
-            <option>D3</option>
-            <option>D4</option>
-            <option>S1</option>
-            <option>S2</option>
-          </select>
-
       </div>
     </div>
 
@@ -180,11 +152,11 @@
         <h5>Featured Job</h5>
       </div>
 
-      <div class="konten1">
+      <div class="konten1 konten-category">
         <h5>All Job</h5>
       </div>
 
-      <div class="konten2">
+      <div class="konten2 konten-category">
         <h5>Remote Job</h5>
       </div>
 
@@ -209,7 +181,7 @@
 
     <div class="container-job">
  <!-- FEATURED JOB      -->
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="web developer">
         <div class="div1">
           <img src="GAMBAR/Bi.jpg" alt="" />
           <div class="perusahaan"><h2> Data Analytics <br>Manager</h2>
@@ -232,7 +204,7 @@
           </div>
           </div>
 
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="remote job">
             <div class="div1">
               <img src="GAMBAR/Mandiri.png" alt="" />
               <div class="perusahaan"><h2>Universal Banker <br> Development</h2>
@@ -1614,97 +1586,16 @@
                         </div>
                     
                         
-                        <div class="content2">
-                          <div class="div1">
-                            <img src="GAMBAR/idn.jpg" alt="" />
-                            <div class="perusahaan"><h2>  Staff Outlet <br> Indomaret  </h2>
-                              <h5>PT INDOMARCO PRIMASTANA<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
-                              <div class="apply"><div><h6>Apply before 5 Jun</h6></div>
-                              <div class="type"><h6>Intership/Part Time</h6></div> </div>  
-                            </div>
-                            <div class="div2">
-                              <ul>
-                                <li> <i class="fas fa-map-marker-alt"></i>Bali, Indonesia</li>
-                                <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
-                                <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
-                                <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br>3 jam lalu</li>
-                              </ul>
-                              <div class="button_konten">
-                                <button class="button_view"> <a href="apply.html">Apply</a></button>
-                                <button class="button_view"><a href="viewport45.html">View Post</a></button>
-                              </div>
-                            </div>
-                            </div>
+                        
                     
                     
                         
-                            <div class="content2">
-                              <div class="div1">
-                                <img src="GAMBAR/kfc.png" alt="" />
-                                <div class="perusahaan"><h2> Crew Outlet <br>(Part Time) </h2>
-                                  <h5>PT FAST FOOD INDONESIA<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
-                                  <div class="apply"><div><h6>Apply before 10 Jun</h6></div>
-                                  <div class="type"><h6>Intership/Part Time</h6></div> </div>   
-                                </div>
-                                <div class="div2">
-                                  <ul>
-                                    <li> <i class="fas fa-map-marker-alt"></i>Yogyakarta, Indonesia</li>
-                                    <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
-                                    <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
-                                    <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br> 9 jam lalu</li>
-                                  </ul>
-                                  <div class="button_konten">
-                                    <button class="button_view"> <a href="apply.html">Apply</a></button>
-                                    <button class="button_view"><a href="viewport46.html">View Post</a></button>
-                                  </div>
-                                </div>
-                                </div>
+                           
                     
                         
-                    <div class="content2">
-                      <div class="div1">
-                        <img src="GAMBAR/pt4.png" alt="" />
-                        <div class="perusahaan"><h2> DevOps <br> Engineer
-                        </h2>
-                          <h5>PT VANGUARD ENTERPRISES<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
-                          <div class="apply"><div><h6>Apply before 10 Jun</h6></div>
-                          <div class="type"><h6>Intership/Part Time</h6></div> </div>   
-                        </div>
-                        <div class="div2">
-                          <ul>
-                            <li> <i class="fas fa-map-marker-alt"></i>Jakarta Pusat, Indonesia</li>
-                            <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
-                            <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
-                            <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br> 14 jam lalu</li>
-                          </ul>
-                          <div class="button_konten">
-                            <button class="button_view">Apply</button>
-                            <button class="button_view"><a href="viewport47.html">View Post</a></button>
-                          </div>
-                        </div>
-                        </div>
                     
-                        <div class="content2">
-                          <div class="div1">
-                            <img src="GAMBAR/sbux.png" alt="" />
-                            <div class="perusahaan"><h2> Barista <br> (Part Time) </h2>
-                              <h5>PT. SARI COFFEE INDONESIA<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
-                              <div class="apply"><div><h6>Apply before 7 Sep</h6></div>
-                              <div class="type"><h6>Intership/Part Time</h6></div> </div>  
-                            </div>
-                            <div class="div2">
-                              <ul>
-                                <li> <i class="fas fa-map-marker-alt"></i>Surabaya, Indonesia</li>
-                                <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
-                                <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
-                                <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br> 2 hari lalu</li>
-                              </ul>
-                              <div class="button_konten">
-                                <button class="button_view"> <a href="apply.html">Apply</a></button>
-                                <button class="button_view"><a href="viewport48.html">View Post</a></button>
-                              </div>
-                            </div>
-                            </div>
+                    
+                        
  
         </div>
       </div>
@@ -1821,13 +1712,16 @@
 
         <div class="container-bottom">
 
-          <img src="https://s1.cdn.autoevolution.com/images/news/google-maps-data-confirms-the-traffic-trends-everybody-expected-151897_1.jpg" alt="">
+          <iframe
+            src="https://embed.waze.com/iframe?zoom=16&lat=-8.592284&lon=115.261075&pin=1"
+            allowfullscreen
+          ></iframe>
           <img src="https://www.emporioarchitect.com/upload/portofolio/jasa-arsitek-desain-kantor-bapak-wiantono-bekasi-142358367040820023919-0.jpg" alt="">
         </div>
 
       </div>
-      <div class="container-maps"><a href="https://maps.app.goo.gl/UkuziuXGiErS8Gm17">
-          <h1>Find in Google Maps</h1>
+      <div class="container-maps"><a href="https://www.waze.com/en/live-map/directions/banjar-seseh-singapadu-jalan-raya-singapadu-sukawati?place=w.75564722.755385077.8212487">
+          <h1>Find in Waze</h1>
         </a>
         <p> JL. Br. Seseh, Singapadu, Kec. Sukawati, Kabupaten Gianyar, Bali 80582</p>
       </div>
@@ -1895,6 +1789,7 @@
             </footer>
         </div>
       </section>
+      <script src="js/script.js"></script>
 </body>
 
 </html>
