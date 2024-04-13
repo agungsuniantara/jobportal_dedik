@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     * {
       font-family: 'Poppins';
@@ -19,7 +20,6 @@
 
 
 <body style="margin: 0px">
-
 
   <div class="header" >
     <div>
@@ -45,7 +45,6 @@
     <div style="display: flex; justify-content: space-around; width: 380px ;">
 
       <div class="container-header">
-        
           <p><a href="home.html">Home</a></p>
         </a>
         <div></div>
@@ -65,11 +64,11 @@
       <div class="container-header">
         <p><a href="contact.html">Contact Us</a></p>
       </div>
+      
     </div>
-
-  
-
-  
+    <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
+    
     <div  style="display: flex; justify-content:space-around; align-items: center;">
       <div class="konten-header"><button style="
         background-color: rgb(170, 131, 23);
@@ -81,7 +80,7 @@
    
   </button></div>
       
- <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
     
     <div class="konten-header" class="konten-header"><button style="
       background-color: rgb(170, 131, 23);
@@ -92,10 +91,31 @@
     ">
  <a href="register.html"> Register</a>
   </button></div>
+
+  <div class="dropdown">
+  <div class="dropdown-konten">
+  <a href="home.html">Home</a>
+</div>
+<div class="dropdown-konten">
+  <a href="index.html">Find Job</a>
+</div>
+<div class="dropdown-konten">
+  <a href="about.html">About</a>
+</div>
+<div class="dropdown-konten">
+  <a href="contact.html">Contact Us</a>
+</div>
+<div class="dropdown-konten">
+  <a href="login.html">Login</a>
+</div>
+<div class="dropdown-konten">
+  <a href="register.html">Register</a>
+</div>
+</div>
   </div>
   </div>
 
-<div class="container">
+<div class="container fade">
     <div><h5 >Mencari Pekerjaan / Mencari Kerja Untukmu </h5></div>
     <div>
         <div>
@@ -105,13 +125,13 @@
         </div>
         </div>
 
-        <div class="konten-gambar" >
+        <div class="konten-gambar fade" >
             <img style="display: flex; justify-content: center;" src="GAMBAR/informasi7.jpg" alt="">
         </div>
 
     </div>
 
-    <div class="container-informasi">
+    <div class="container-informasi fade">
        <p>Resume adalah alat yang paling penting dalam arsenalmu ketika mencari pekerjaan. Ini adalah gambaran singkat tentang siapa dirimu, kualifikasimu, dan apa yang dapat kamu tawarkan kepada perusahaan yang sedang kamu lamar. Dalam dunia yang kompetitif ini, resume yang memukau dapat membuatmu menonjol di antara calon pelamar lainnya. Berikut adalah panduan terbaru untuk menyusun resume yang memikat hati para perekrut:
     </p>
 
@@ -150,7 +170,7 @@
     <p>Dengan mengikuti panduan ini dan menyusun resume-mu dengan cermat, kamu dapat meningkatkan peluangmu untuk menarik perhatian perekrut dan mendapatkan panggilan wawancara. Ingatlah untuk menyesuaikan resume-mu dengan setiap posisi yang kamu lamar, dan jangan ragu untuk menonjolkan prestasi dan keterampilan unikmu.
         </p>
         <b>Share :</b>
-        <div  class="share">
+        <div  class="share fade">
            
             <i class="fab fa-whatsapp-square"></i>
             <i class="fas fa-envelope"></i>
@@ -165,7 +185,7 @@
 
       
     <section>
-      <footer class="footer">
+      <footer class="footer fade">
         <div class="footer-top">
           <div class="footer3">
             <h1 style="display: flex; justify-content: center;align-items: center; font-size: 35px;">
@@ -224,6 +244,7 @@
       </footer>
   </div>
 </section>
+<script src="js/script.js"></script>
 </body>
 
 </html>

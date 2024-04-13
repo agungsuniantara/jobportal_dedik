@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <style>
     * {
       font-family: 'Poppins';
@@ -45,7 +47,6 @@
     <div style="display: flex; justify-content: space-around; width: 380px ;">
 
       <div class="container-header">
-        
           <p><a href="home.html">Home</a></p>
         </a>
         <div></div>
@@ -65,11 +66,11 @@
       <div class="container-header">
         <p><a href="contact.html">Contact Us</a></p>
       </div>
+      
     </div>
-
-  
-
-  
+    <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
+    
     <div  style="display: flex; justify-content:space-around; align-items: center;">
       <div class="konten-header"><button style="
         background-color: rgb(170, 131, 23);
@@ -81,7 +82,7 @@
    
   </button></div>
       
- <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
     
     <div class="konten-header" class="konten-header"><button style="
       background-color: rgb(170, 131, 23);
@@ -92,28 +93,48 @@
     ">
  <a href="register.html"> Register</a>
   </button></div>
+
+  <div class="dropdown">
+  <div class="dropdown-konten">
+  <a href="home.html">Home</a>
+</div>
+<div class="dropdown-konten">
+  <a href="index.html">Find Job</a>
+</div>
+<div class="dropdown-konten">
+  <a href="about.html">About</a>
+</div>
+<div class="dropdown-konten">
+  <a href="contact.html">Contact Us</a>
+</div>
+<div class="dropdown-konten">
+  <a href="login.html">Login</a>
+</div>
+<div class="dropdown-konten">
+  <a href="register.html">Register</a>
+</div>
+</div>
   </div>
   </div>
 
-
-  <div class="contact-tittle">
-    <div class="konten"><h1>Contact</h1></div>
+  <div class="contact-tittle fade" >
+    <div class="konten fade"><h1>Contact</h1></div>
     <div class="contact">
         
             
         </div>
       </div>
     
- <div class="background"></div> 
+ <div class="background fade"></div> 
 
-<div class="wrapper">
-  <div class="div1">
+<div class="wrapper fade">
+  <div class="div1 fade">
   <div class="div2"><img src="GAMBAR/woman.jpg" alt=""></div>
 
   <div class="div">
       <div class="message">
           <h1>Leave Us Message</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, itaque laboriosam,</p>
+          <p>Kami mengharapkan tanggapan Anda. Mohon tinggalkan pesan Anda melalui formulir kontak di halaman ini!</p>
       </div>
       <div class="div3">
           <input type="text"placeholder="Name*" tabindex="0">
@@ -123,7 +144,7 @@
           <div><input type="text"placeholder="Subject*" tabindex="0"></div>
           <div class="div-pesan"><input type="text"placeholder="Write Your Messege*" tabindex="0"></div>
           
-          <button style="height: 40px;">Join</button>
+          <button style="height: 40px;">Submit</button>
       </div>
   </div>
   </div>
@@ -131,7 +152,7 @@
   
 
   <section>
-    <div  class="contact1">
+    <div  class="contact1 fade">
         <div class="contact2">
             <div class="phone">
                 <div class="isi"><i class="fas fa-phone-alt" style="color: #aa8317;"></i></div>
@@ -163,7 +184,7 @@
     
             </div>
         </div>
-        <div class="maps">
+        <div class="maps fade">
             <iframe
             src="https://embed.waze.com/iframe?zoom=16&lat=-8.592284&lon=115.261075&pin=1"
             allowfullscreen width="450px" height="320px"
@@ -176,7 +197,7 @@
 
     
   <section>
-    <footer class="footer">
+    <footer class="footer fade">
       <div class="footer-top">
         <div class="footer3">
           <h1 style="display: flex; justify-content: center;align-items: center; font-size: 35px;">
@@ -235,6 +256,7 @@
     </footer>
 </div>
 </section>
+<script src="js/script.js"></script>
 </body>
 
 </html>

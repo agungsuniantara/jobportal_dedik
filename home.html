@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="home.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    </head>
    <body>
       
@@ -35,7 +36,6 @@
       <div style="display: flex; justify-content: space-around; width: 380px ;">
   
         <div class="container-header">
-          
             <p><a href="home.html">Home</a></p>
           </a>
           <div></div>
@@ -55,11 +55,11 @@
         <div class="container-header">
           <p><a href="contact.html">Contact Us</a></p>
         </div>
+        
       </div>
-  
-    
-  
-    
+      <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+   
+      
       <div  style="display: flex; justify-content:space-around; align-items: center;">
         <div class="konten-header"><button style="
           background-color: rgb(170, 131, 23);
@@ -71,7 +71,7 @@
      
     </button></div>
         
-   <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+   
       
       <div class="konten-header" class="konten-header"><button style="
         background-color: rgb(170, 131, 23);
@@ -80,31 +80,54 @@
         margin-left: 10px;
         border-radius: 30px;
       ">
-    <a href="register.html">Register</a>
+   <a href="register.html"> Register</a>
     </button></div>
+  
+    <div class="dropdown">
+    <div class="dropdown-konten">
+    <a href="home.html">Home</a>
+  </div>
+  <div class="dropdown-konten">
+    <a href="index.html">Find Job</a>
+  </div>
+  <div class="dropdown-konten">
+    <a href="about.html">About</a>
+  </div>
+  <div class="dropdown-konten">
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <div class="dropdown-konten">
+    <a href="login.html">Login</a>
+  </div>
+  <div class="dropdown-konten">
+    <a href="register.html">Register</a>
+  </div>
+  </div>
     </div>
     </div>
 
-      <div class="bg-img">
-         <div class="content">
+      <div class="bg-img fade">
+         <div class="content fade">
             <header>Find Your Future!</header>
             <div class="title"><h5>Job Title</h5></div>
             <form action="#">
-               <div class="form-content">
+               <div class="form-content fade">
                   <span class="fas fa-briefcase"></span>
                   <input type="text" required placeholder="Keyword, Category or Company">
                </div>
                <div class="title"><h5>Job Location</h5></div>
-               <div class="form-content">
+               <div class="form-content fade">
                   <span class="fas fa-map-marker-alt"></span>
                   <input type="text" class="keyword" required placeholder="City, State or Country">
                  
                </div>
               
-               <div class="form-content">
+               <div class="form-content fade">
                   <input  type="submit" value="Search"onclick="location.href='index.html';" />
                </div>
             </form>
+
+            <script src="js/script.js"></script>
      
    </body>
 </html>

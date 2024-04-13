@@ -78,6 +78,16 @@ a {
     border-radius: 0px;
     outline: none;
   }
+  .fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .about-tittle{
     background-image: url(GAMBAR/working.png);
@@ -356,6 +366,20 @@ button:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+.dropdown {
+    display: none;
+  }
+  
+.dropdown-konten {
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+  }
 
 /* ukuran tablet */
 @media only screen and (max-width: 1130px){
@@ -529,4 +553,216 @@ button:hover{
         width: 200px;
        }
     }
+
+    
+/* ukuran tablet */
+@media only screen and (max-width: 1130px){
+    .navbar {
+        display: block;
+        
+    } 
+    .container-header{
+        display: none;
+    }  
+    .konten-header{
+        display: none;
+    }
+    .container-header input{
+        display: none;
+
+    }
+    .container-header button{
+        display: none;
+
+    }
+    
+
+}
+
+/* ukuran mobile L */
+@media only screen and (max-width: 426px){
+    
+    .navbar {
+        display: block;
+        
+    }    
+    
+}
+
+
+/* ukuran mobile M */
+@media only screen and (max-width: 376px){
+    .content2{
+        width: auto;
+    }
+    .container-div{
+        margin: auto;
+    }
+    .footer{
+        width: 100%;
+    }
+   
+
+
+}
+
+/* ukuran mobile S */
+@media only screen and (max-width: 598px){
+    .content2{
+        width: auto;
+    }
+    .div3 {
+        width: auto;
+        
+    }
+
+    .div4{
+        width: auto;
+    }
+}
+
+
+/* ukuran mobile M */
+@media only screen and (max-width: 376px){
+    .content2{
+        width: auto;
+    }
+    .container-div{
+        margin: auto;
+    }
+    .footer{
+        width: 100%;
+    }
+
+
+}
+
+/* ukuran mobile S */
+@media only screen and (max-width: 321px){
+    .content2{
+        width: auto;
+    }
+
+}
+
+
+
+ /* ukuran tablet */
+ @media only screen and (max-width: 768px){
+    .footer{
+        font-size: 12pt;
+       }
+       .footer img{
+        width: 200px;
+       }
+    }
+    @media only screen and (max-width: 1130px) {
+        .navbar {
+          display: block;
+          margin-right: 50px;
+        }
+        .container-header {
+          display: none;
+        }
+        .konten-header {
+          display: none;
+        }
+        .container-header input {
+          display: none;
+        }
+        .container-header button {
+          display: none;
+        }
+        .dropdown {
+          margin-top: 32%;
+          width: 100px;
+          margin-right: 250px;
+          position: absolute;
+          display: none;
+        }
+        .dropdown.active {
+          display: block;
+       
+        
+      }
+    }
+    /* ukuran tablet */
+    @media only screen and (max-width: 768px) {
+        .footer {
+          font-size: 12pt;
+        }
+        .footer img {
+          display: none;
+        }
+        .dropdown {
+          margin-top: 45%;
+          width: 100px;
+          margin-right: 90px;
+          position: absolute;
+          display: none;
+        }
+        .dropdown.active {
+          display: block;
+        }
+        .div-tittle{
+            border: none;
+        }
+        
+      }
+   
+      /* ukuran mobile L */
+    @media only screen and (max-width: 503px) {
+        .footer {
+          font-size: 10pt;
+        }
+        
+        .dropdown {
+          margin-top: 75%;
+          width: 100px;
+          margin-right: 80px;
+          position: absolute;
+          display: none;
+        }
+        .dropdown.active {
+          display: block;
+        }
+      }
+      
+      /* ukuran mobile M */
+      @media only screen and (max-width: 442px) {
+        .footer {
+          font-size: 10pt;
+        }
+       
+        .dropdown {
+          margin-top: 83%;
+          width: 100px;
+          margin-right: 90px;
+          position: absolute;
+          display: none;
+        }
+        .dropdown.active {
+          display: block;
+        }
+      }
+      
+      /* ukuran mobile S */
+      @media only screen and (max-width: 321px) {
+        .footer {
+          font-size: 8pt;
+        }
+     
+        .dropdown {
+          margin-top: 97%;
+          width: 100px;
+          margin-right: 160px;
+          position: absolute;
+          display: none;
+        }
+        .dropdown.active {
+          display: block;
+        }
+      }
+      
+        
  

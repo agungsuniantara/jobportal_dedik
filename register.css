@@ -25,7 +25,31 @@
   border: none;
   outline: none;
  
+}
+.dropdown {
+  display: none;
+}
+
+.dropdown-konten {
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 } 
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 .navbar{
@@ -253,6 +277,131 @@ i span{
 button{
   border: none;
 }
+@media only screen and (max-width: 1130px) {
+  .navbar {
+    display: block;
+    margin-right: 50px;
+  }
+  .container-header {
+    display: none;
+  }
+  .konten-header {
+    display: none;
+  }
+  .container-header input {
+    display: none;
+  }
+  .container-header button {
+    display: none;
+  }
+  .dropdown {
+    margin-top: 32%;
+    width: 100px;
+    margin-right: 180px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+ 
+  
+}
+}
+/* ukuran tablet */
+@media only screen and (max-width: 768px) {
+  .footer {
+    font-size: 12pt;
+  }
+  .footer img {
+    display: none;
+  }
+  .dropdown {
+    margin-top: 45%;
+    width: 100px;
+    margin-right: 70px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+  }
+  
+}
+/* ukuran tablet */
+@media only screen and (max-width: 768px) {
+  .footer {
+    font-size: 12pt;
+  }
+  .footer img {
+    display: none;
+  }
+  .dropdown {
+    margin-top: 45%;
+    width: 100px;
+    margin-right: 70px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+  }
+  
+}
+/* ukuran mobile L */
+@media only screen and (max-width: 503px) {
+  .footer {
+    font-size: 10pt;
+  }
+  
+  .dropdown {
+    margin-top: 75%;
+    width: 100px;
+    margin-right: 80px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+  }
+}
+
+/* ukuran mobile M */
+@media only screen and (max-width: 442px) {
+  .footer {
+    font-size: 10pt;
+  }
+ 
+  .dropdown {
+    margin-top: 75%;
+    width: 100px;
+    margin-right: 80px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+  }
+}
+
+/* ukuran mobile S */
+@media only screen and (max-width: 321px) {
+  .footer {
+    font-size: 8pt;
+  }
+
+  .dropdown {
+    margin-top: 87%;
+    width: 100px;
+    margin-right: 80px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+  }
+}
+
+  
 
 /* ukuran tablet */
 @media only screen and (max-width: 1130px){

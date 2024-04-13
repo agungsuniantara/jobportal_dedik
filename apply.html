@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     * {
       font-family: 'Poppins';
@@ -45,7 +46,6 @@
     <div style="display: flex; justify-content: space-around; width: 380px ;">
 
       <div class="container-header">
-        
           <p><a href="home.html">Home</a></p>
         </a>
         <div></div>
@@ -65,11 +65,11 @@
       <div class="container-header">
         <p><a href="contact.html">Contact Us</a></p>
       </div>
+      
     </div>
-
-  
-
-  
+    <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
+    
     <div  style="display: flex; justify-content:space-around; align-items: center;">
       <div class="konten-header"><button style="
         background-color: rgb(170, 131, 23);
@@ -81,7 +81,7 @@
    
   </button></div>
       
- <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
     
     <div class="konten-header" class="konten-header"><button style="
       background-color: rgb(170, 131, 23);
@@ -92,10 +92,31 @@
     ">
  <a href="register.html"> Register</a>
   </button></div>
+
+  <div class="dropdown">
+  <div class="dropdown-konten">
+  <a href="home.html">Home</a>
+</div>
+<div class="dropdown-konten">
+  <a href="index.html">Find Job</a>
+</div>
+<div class="dropdown-konten">
+  <a href="about.html">About</a>
+</div>
+<div class="dropdown-konten">
+  <a href="contact.html">Contact Us</a>
+</div>
+<div class="dropdown-konten">
+  <a href="login.html">Login</a>
+</div>
+<div class="dropdown-konten">
+  <a href="register.html">Register</a>
+</div>
+</div>
   </div>
   </div>
 
-<div class="div-icon">
+<div class="div-icon fade">
     <div class="content-icon">
 
         <div class="icon">
@@ -129,7 +150,7 @@
    
 </div>
 
-<div class="job">
+<div class="job fade">
     <div class="job-file">
         <div class="container-tittle">
             <h3>Contact Info</h3>
@@ -152,7 +173,7 @@
             <div class="konten-dalam2"><i class="fas fa-plus-circle" style="color: #aa8317;"></i><p>Add Contact Info</p></div>
         </div>
     
-        <div class="container-tittle">
+        <div class="container-tittle fade">
             <h3>Work Experience</h3>
             <div class="konten-dalam">
                 <div><p>Selain jabatan atau perusahaan terakhir Anda, pemberi kerja ingin mengetahui pencapaian Anda selama berada di sana. Detail prestasi dan kontribusi yang dibuat.</p></div>
@@ -161,7 +182,7 @@
            <div class="konten-dalam2"><i class="fas fa-plus-circle" style="color: #aa8317;"></i><p>Add Work Experience</p></div>
         </div>
     
-        <div class="container-tittle">
+        <div class="container-tittle fade">
             <h3>Education</h3>
             <div class="konten-dalam">
                <p>Pencapaian pendidikan Anda yang terbaru dan relevan harus didahulukan. Jika Anda memiliki gelar pascasarjana atau master, tidak perlu mencantumkan di mana Anda bersekolah.</p>
@@ -169,9 +190,9 @@
            <div class="konten-dalam2"><i class="fas fa-plus-circle" style="color: #aa8317;"></i></i><p>Add Education</p></div>
         </div>
 
-        <div class="container-tittle2">
+        <div class="container-tittle2 fade">
             <h3>Resume</h3>
-            <div class="konten-dalam">
+            <div class="konten-dalam fade">
                <p>Catatan: Profil Anda adalah hal pertama yang dilihat perekrut dan bukan resume yang Anda unggah,
                 jadi pastikan profil Carrer Nest Anda selengkap mungkin
                 dan detail seperti yang Anda unggah
@@ -189,7 +210,7 @@
     <div>
     </div>
 
-    <div class="job-right">
+    <div class="job-right fade">
         <div class="div-tittle">
             <h3>Required Section</h3>
             <div class="div-row">
@@ -199,7 +220,7 @@
                    <p>Add Education</p>
                 </div>
 
-                <div class="Add">
+                <div class="Add fade">
                     <p>Add</p>
                     <p>Add</p>
                     <p>Add</p>
@@ -207,7 +228,7 @@
                 </div>
 
             </div>
-            <div class="div-tittle1">
+            <div class="div-tittle1 fade">
                 <h3>Recommended Section</h3>
                 <h5 style="opacity: 0.5;">Ini tidak wajib tetapi akan membantu meningkatkan <br>
                     profil anda</h5>
@@ -218,7 +239,7 @@
                        <p>Add descriptions on work experience</p>
                     </div>
     
-                    <div class="Add">
+                    <div class="Add fade">
                         <p>Add</p>
                         <p>Add</p>
                         <p>Add</p>
@@ -235,7 +256,7 @@
 
     
   <section>
-    <footer class="footer">
+    <footer class="footer fade">
       <div class="footer-top">
         <div class="footer3">
           <h1 style="display: flex; justify-content: center;align-items: center; font-size: 35px;">
@@ -294,6 +315,7 @@
     </footer>
 </div>
 </section>
+<script src="js/script.js"> </script>
 </body>
 
 </html>

@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="apply.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ 
   <style>
     * {
       font-family: 'Poppins';
@@ -19,7 +23,6 @@
 
 
 <body style="margin: 0px">
-
 
   <div class="header" >
     <div>
@@ -45,7 +48,6 @@
     <div style="display: flex; justify-content: space-around; width: 380px ;">
 
       <div class="container-header">
-        
           <p><a href="home.html">Home</a></p>
         </a>
         <div></div>
@@ -65,11 +67,11 @@
       <div class="container-header">
         <p><a href="contact.html">Contact Us</a></p>
       </div>
+      
     </div>
-
-  
-
-  
+    <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
+    
     <div  style="display: flex; justify-content:space-around; align-items: center;">
       <div class="konten-header"><button style="
         background-color: rgb(170, 131, 23);
@@ -81,7 +83,7 @@
    
   </button></div>
       
- <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
     
     <div class="konten-header" class="konten-header"><button style="
       background-color: rgb(170, 131, 23);
@@ -92,36 +94,55 @@
     ">
  <a href="register.html"> Register</a>
   </button></div>
+
+  <div class="dropdown">
+  <div class="dropdown-konten">
+  <a href="home.html">Home</a>
+</div>
+<div class="dropdown-konten">
+  <a href="index.html">Find Job</a>
+</div>
+<div class="dropdown-konten">
+  <a href="about.html">About</a>
+</div>
+<div class="dropdown-konten">
+  <a href="contact.html">Contact Us</a>
+</div>
+<div class="dropdown-konten">
+  <a href="login.html">Login</a>
+</div>
+<div class="dropdown-konten">
+  <a href="register.html">Register</a>
+</div>
+</div>
   </div>
   </div>
 
-  
-</div>
-  <div class="about-tittle">
-    <div class="konten">
+  <div class="about-tittle fade">
+    <div class="konten fade">
         <h1>Bergabunglah dengan Carrer Nest dan wujudkan impian karir anda!</h1>
         <p>Karir yang memuaskan menanti Anda di Carrer Nest. Temukan peran yang sesuai dengan minat dan bakat anda, bangunlah masa depan yang cerah bersama kami.</p>
-        <button>Join</button>
+        <button><a href="login.html">Join</a></button>
     </div>
   </div>
 
   
-  <div class="about-konten1">
+  <div class="about-konten1 fade">
     <div>
         <h1>About Us</h1>
         
     </div>
 
-    <div class="konten1">
+    <div class="konten1 fade">
         <p>Selamat datang di Carrer Nest, solusi terbaik untuk pencarian lowongan kerja yang efisien dan efektif. Carrer Nest didirikan dengan tujuan menyediakan platform yang dapat mempertemukan para pencari kerja dengan berbagai peluang karir yang sesuai dengan kebutuhan dan keahlian mereka. Di Carrer Nest, kami memahami betapa pentingnya menemukan pekerjaan yang tepat untuk mencapai tujuan karir Anda. Oleh karena itu, kami berkomitmen untuk menyediakan layanan yang memudahkan Anda menemukan peluang-peluang terbaik dalam dunia kerja. Dengan teknologi canggih, kami menyajikan informasi lowongan kerja terbaru dari berbagai sektor dan perusahaan terkemuka.</p>
     </div>
 </div>
 
 <div>
-    <div class="about-konten">
+    <div class="about-konten fade">
         <h1>Superiority</h1>
     </div>
-    <div class="Keunggulan">
+    <div class="Keunggulan fade">
         <div style="display: block;" class="container">
             <div class="isi">
               <div class="isii"><h3>Pencarian yang Mudah dan Efisien</h3>
@@ -159,10 +180,10 @@
                                 </div>
                 </div>
 
-                <div class="about-konten">
+                <div class="about-konten fade">
                     <h1>Top Review </h1>
                 </div>
-                <div class="top-review">
+                <div class="top-review fade">
                     <div style="display: block;" class="container1">
                         <div class="isi1">
                             <div class="isi2">
@@ -319,7 +340,7 @@
             
  
                             <section>
-                              <footer class="footer">
+                              <footer class="footer fade">
                                 <div class="footer-top">
                                   <div class="footer3">
                                     <h1 style="display: flex; justify-content: center;align-items: center; font-size: 35px;">
@@ -378,6 +399,7 @@
                               </footer>
                           </div>
                         </section>
+                        <script src="js/script.js"></script>
                   </body>
                   
                   </html>

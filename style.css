@@ -32,10 +32,6 @@
 }
 
 .dropdown {
-  margin-top: 92%;
-  width: 100px;
-  margin-right: 80px;
-  position: absolute;
   display: none;
 }
 
@@ -262,6 +258,7 @@ a {
   color: rgb(255, 220, 124);
 }
 
+
 .konten:hover,
 .konten1:hover,
 .konten2:hover,
@@ -286,6 +283,16 @@ a {
   flex-wrap: wrap;
   row-gap: 30px;
   cursor: pointer;
+}
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .div1 {
@@ -465,8 +472,8 @@ input {
 }
 
 .container-bottom iframe {
-  width: 1000px;
-  height: 576px;
+  width: 1500px;
+  height: 580px;
 }
 
 .container-bottom {
@@ -590,15 +597,32 @@ input {
   border: none;
   outline: none;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
   .input-form {
     width: 50px;
   }
+  .container-bottom iframe {
+    width: 1000px;
+    height: 580px;
+  }
 }
+@media only screen and (max-width: 1025px) {
+  .input-form {
+    width: 50px;
+  }
+  .container-bottom iframe {
+    width: 800px;
+    height: 500px;
+  }
+  
+ 
+}
+
 /* ukuran tablet */
 @media only screen and (max-width: 1130px) {
   .navbar {
     display: block;
+    margin-right: 50px;
   }
   .container-header {
     display: none;
@@ -612,20 +636,96 @@ input {
   .container-header button {
     display: none;
   }
+  .dropdown {
+    margin-top: 32%;
+    width: 100px;
+    margin-right: 180px;
+    position: absolute;
+    display: none;
+  }
   .dropdown.active {
     display: block;
   }
+  .container-bottom iframe {
+    width: 600px;
+    height: 400px;
+  }
+  .konten-dalam{
+    margin-right: 100px;
+   }
 }
 
+@media only screen and (max-width: 615px) {
+  .navbar {
+    display: block;
+  }
+  .container-bottom iframe {
+    width: 400px;
+    height: 300px;
+  }
+  .konten-dalam{
+    margin-right: 30px;
+   }
+}
 /* ukuran mobile L */
 @media only screen and (max-width: 426px) {
   .navbar {
     display: block;
   }
-}
-
+  .container-bottom iframe {
+    width: 400px;
+    height: 300px;
+  }
+  .konten-dalam{
+    margin-right: 20px;
+    font-size: 10pt;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+   }
+   .konten-ditengah p{
+    margin-left: 100px;
+    width: 200px;
+   }
+   .konten-ditengah h1{
+    margin-left: 100px;
+    width: 200px;
+   }
+   .konten-ditengah button{ 
+    width: 100px;
+    padding: 20px;
+    font-size: 10pt;
+   }
+   .mediasocial i{ 
+    font-size: 16pt;
+   }
+   .div1{
+    width: 360px;
+   }
+   .div2{
+    width: 360px;
+   }
+ 
+   .button_konten{
+    width: 300px;
+   }
+   .container-div1{
+    width: 200px;
+   }
+   .dropdown {
+    margin-top: 75%;
+    width: 100px;
+    margin-right: 80px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+  }
+  
+  }
 /* ukuran mobile M */
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 405px) {
   .content2 {
     width: auto;
   }
@@ -635,6 +735,13 @@ input {
   .footer {
     width: 100%;
   }
+  .container-bottom iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .konten-dalam{
+    margin-right: 10px;
+   }
 }
 
 /* ukuran mobile S */
@@ -642,6 +749,9 @@ input {
   .content2 {
     width: auto;
   }
+  .konten-dalam{
+    margin-right: 0px;
+   }
 }
 
 /* ukuran tablet */
@@ -650,8 +760,19 @@ input {
     font-size: 12pt;
   }
   .footer img {
-    width: 200px;
+    display: none;
   }
+  .dropdown {
+    margin-top: 45%;
+    width: 100px;
+    margin-right: 70px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
+  }
+  
 }
 
 /* ukuran mobile L */
@@ -659,8 +780,16 @@ input {
   .footer {
     font-size: 10pt;
   }
-  .footer img {
-    width: 150px;
+  
+  .dropdown {
+    margin-top: 75%;
+    width: 100px;
+    margin-right: 80px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
   }
 }
 
@@ -669,8 +798,16 @@ input {
   .footer {
     font-size: 10pt;
   }
-  .footer img {
-    width: 150px;
+ 
+  .dropdown {
+    margin-top: 75%;
+    width: 100px;
+    margin-right: 80px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
   }
 }
 
@@ -679,7 +816,15 @@ input {
   .footer {
     font-size: 8pt;
   }
-  .footer img {
-    width: 150px;
+
+  .dropdown {
+    margin-top: 87%;
+    width: 100px;
+    margin-right: 80px;
+    position: absolute;
+    display: none;
+  }
+  .dropdown.active {
+    display: block;
   }
 }

@@ -63,11 +63,11 @@
       <div class="container-header">
         <p><a href="contact.html">Contact Us</a></p>
       </div>
+      
     </div>
-
-  
-
-  
+    <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
+ 
+    
     <div  style="display: flex; justify-content:space-around; align-items: center;">
       <div class="konten-header"><button style="
         background-color: rgb(170, 131, 23);
@@ -79,7 +79,6 @@
    
   </button></div>
       
- <div class="navbar"><i class="fas fa-bars" style="color: #ffffff;"></i></div>
  
     
     <div class="konten-header" class="konten-header"><button style="
@@ -94,22 +93,22 @@
 
   <div class="dropdown">
   <div class="dropdown-konten">
-  <a href="">Home</a>
+  <a href="home.html">Home</a>
 </div>
 <div class="dropdown-konten">
-  <a href="">Find Job</a>
+  <a href="index.html">Find Job</a>
 </div>
 <div class="dropdown-konten">
-  <a href="">About</a>
+  <a href="about.html">About</a>
 </div>
 <div class="dropdown-konten">
-  <a href="">Contact Us</a>
+  <a href="contact.html">Contact Us</a>
 </div>
 <div class="dropdown-konten">
-  <a href="">Login</a>
+  <a href="login.html">Login</a>
 </div>
 <div class="dropdown-konten">
-  <a href="">Register</a>
+  <a href="register.html">Register</a>
 </div>
 </div>
   </div>
@@ -119,13 +118,13 @@
 
 
 
-  <div class="container">
+  <div class="container fade">
     <div class="bg-utama">
       <div class="konten-ditengah">
         <div class="konten-dalam">
           <h1>Carrer Nest</h1>
           <p>"Ayo bergabung dengan Carrer Nest! Temukan pekerjaan yang sesuai <br>dengan minat anda dan mulailah membangun karier yang sukses bersama kami".</p>
-          <button>View</button>
+          <button class="button-view">View</button>
           <div class="mediasocial">
             <i class="fab fa-tiktok"></i>
             <i   class="fab fa-youtube"></i>
@@ -138,7 +137,7 @@
     </div>
 
     <!-- search -->
-    <div class="wrapper">
+    <div class="wrapper fade">
       <div class="box">
         <div class="card">
           <input class="search-input" id="filter-search" type="text" placeholder="Job title or keyword">
@@ -147,10 +146,58 @@
       </div>
     </div>
 
-    <div class="container-pilihan">
-      <div class="konten">
-        <h5>Featured Job</h5>
+    <div class="filter fade">
+      <div class="filter-content">
+        <select class="filter-select" name="job-level" id="job-level">
+        <option>Job Level</option>
+        <option>Entry</option>
+        <option>Mid-Senior</option>
+        <option>Supervisor</option>
+        <option>Director</option>
+        </select>
+
+        <select class="filter-select" name="job-level" id="job-level">
+          <option>Job Function</option>
+          <option>IT</option>
+          <option>Accounting</option>
+          <option>Marketing</option>
+        </select>
+
+        <select class="filter-select" name="job-level" id="job-level">
+          <option>Empolyment</option>
+          <option>Intership</option>
+          <option>Full Time</option>
+          <option>Part Time</option>
+        </select>
+
+        
+
+          <select class="filter-select" name="job-level" id="job-level">
+            <option>Location</option>
+            <option>Remote</option>
+            <option>Jakarta</option>
+            <option>Medan</option>
+            <option>Bali</option>
+            <option>Bandung</option>
+            <option>Palembang</option>
+          </select>
+
+          <select class="filter-select" name="job-level" id="job-level">
+            <option>Education</option>
+            <option>SMA</option>
+            <option>SMK</option>
+            <option>D3</option>
+            <option>D4</option>
+            <option>S1</option>
+            <option>S2</option>
+          </select>
+
       </div>
+    </div>
+
+
+    <div class="container-pilihan fade">
+      
 
       <div class="konten1 konten-category">
         <h5>All Job</h5>
@@ -160,28 +207,31 @@
         <h5>Remote Job</h5>
       </div>
 
-      <div class="konten3">
+      <div class="konten konten-category">
+        <h5>Featured Job</h5>
+      </div>
+
+      <div class="konten3  konten-category">
         <h5>High Paying Job</h5>
       </div>
 
-      <div class="konten4">
+      <div class="konten4  konten-category">
         <h5>IT and Software</h5>
       </div>
 
-      <div class="konten5">
-       <div> 
-        
+      <div class="konten5  konten-category">
         <h5 >Fresh Job</h5>
       </div>
-      </div>
+
+      
      
       
     </div>
 
 
-    <div class="container-job">
+    <div class="container-job fade">
  <!-- FEATURED JOB      -->
-      <div class="content2 data-filter" data-specialist="web developer">
+      <div class="content2 data-filter" data-specialist="featured job">
         <div class="div1">
           <img src="GAMBAR/Bi.jpg" alt="" />
           <div class="perusahaan"><h2> Data Analytics <br>Manager</h2>
@@ -204,7 +254,7 @@
           </div>
           </div>
 
-      <div class="content2 data-filter" data-specialist="remote job">
+      <div  class="content2 data-filter" data-specialist="featured job">
             <div class="div1">
               <img src="GAMBAR/Mandiri.png" alt="" />
               <div class="perusahaan"><h2>Universal Banker <br> Development</h2>
@@ -226,7 +276,7 @@
               </div>
               </div>
 
-              <div class="content2">
+              <div  class="content2 data-filter" data-specialist="featured job">
                 <div class="div1">
                   <img src="GAMBAR/pt1.png" alt="" />
                   <div class="perusahaan"><h2> Human Resources Manager</h2>
@@ -249,7 +299,7 @@
                   </div>
     
                  
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="featured job">
         <div class="div1">
           <img src="GAMBAR/pt2.png" alt="" />
           <div class="perusahaan"><h2> IT Full Stack <br>
@@ -273,7 +323,7 @@
           </div>
 
                      
-      <div class="content2">
+      <div  class="content2 data-filter" data-specialist="featured job">
         <div class="div1">
           <img src="GAMBAR/pt3.png" alt="" />
           <div class="perusahaan"><h2>Financial and Accounting Specialist </h2>
@@ -296,7 +346,7 @@
           </div>
 
                          
-      <div class="content2">
+      <div  class="content2 data-filter" data-specialist="featured job">
         <div class="div1">
           <img src="GAMBAR/Telkom.png" alt="" />
           <div class="perusahaan"><h2>Network <br>Administrator</h2>
@@ -319,7 +369,7 @@
           </div>
 
                             
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="featured job">
         <div class="div1">
           <img  src="GAMBAR/bca.jpg" alt="" />
           <div class="perusahaan"><h2> Financial <br>Consultant</h2>
@@ -342,7 +392,7 @@
           </div>
 
                                  
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="featured job">
         <div class="div1">
           <img src="GAMBAR/pt.png" alt="" />
           <div class="perusahaan"><h2>Business Data <br>Analyst </h2>
@@ -365,7 +415,7 @@
           </div>
 
           <!-- REMOTE JOB -->   
-      <div class="content2">
+      <div  class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/pt4.png" alt="" />
           <div class="perusahaan"><h2> Cybersecurity Risk Analyst </h2>
@@ -388,7 +438,7 @@
           </div>
 
           
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/shopee.jpg" alt="" />
           <div class="perusahaan"><h2> Graphic and Multimedia Designer</h2>
@@ -411,7 +461,7 @@
           </div>
 
           
-      <div class="content2">
+      <div  class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/tokopedia.webp" alt="" />
           <div class="perusahaan"><h2> Professional Development </h2>
@@ -434,7 +484,7 @@
           </div>
 
           
-      <div class="content2">
+      <div  class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/pt3.png" alt="" />
           <div class="perusahaan"><h2> Software <br> Developer </h2>
@@ -457,7 +507,7 @@
           </div>
 
           
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/NRI.jpg" alt="" />
           <div class="perusahaan"><h2>Data Engineer <br>(DE) </h2>
@@ -481,7 +531,7 @@
 
 
           
-      <div class="content2">
+      <div  class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/tokopedia.webp" alt="" />
           <div class="perusahaan"><h2>Digital Marketing Specialist </h2>
@@ -504,7 +554,7 @@
           </div>
 
           
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/pt4.png" alt="" />
           <div class="perusahaan"><h2> Professional Development </h2>
@@ -528,7 +578,7 @@
           </div>
 
           
-      <div class="content2">
+      <div  class="content2 data-filter" data-specialist="remote job">
         <div class="div1">
           <img src="GAMBAR/NRI.jpg" alt="" />
           <div class="perusahaan"><h2>Software <br> Development </h2>
@@ -552,7 +602,7 @@
 
 <!-- High Paying Job -->
 
-<div class="content2">
+<div  class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/Pertamina.jpg" alt="" />
     <div class="perusahaan"><h2>Graphic and Multimedia Designer</h2>
@@ -575,7 +625,7 @@
     </div>
 
     
-<div class="content2">
+<div  class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/Mandiri.png" alt="" />
     <div class="perusahaan"><h2> Financial and Accounting Specialist </h2>
@@ -598,7 +648,7 @@
     </div>
 
     
-<div class="content2">
+<div class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/freeport.png" alt="" />
     <div class="perusahaan"><h2> Information <br> Technology </h2>
@@ -621,7 +671,7 @@
     </div>
 
     
-<div class="content2">
+<div class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/Telkom.png" alt="" />
     <div class="perusahaan"><h2> Software <br> Development</h2>
@@ -644,7 +694,7 @@
     </div>
 
     
-<div class="content2">
+<div  class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/pt3.png" alt="" />
     <div class="perusahaan"><h2> Business Data <br>Analyst </h2>
@@ -668,7 +718,7 @@
 
 
     
-<div class="content2">
+<div  class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/tokopedia.webp" alt="" />
     <div class="perusahaan"><h2> Graphic and Multimedia Designer </h2>
@@ -691,7 +741,7 @@
     </div>
 
     
-<div class="content2">
+<div class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/bca.jpg" alt="" />
     <div class="perusahaan"><h2> Management <br> Consultant </h2>
@@ -714,7 +764,7 @@
     </div>
 
     
-<div class="content2">
+<div  class="content2 data-filter" data-specialist="high paying job">
   <div class="div1">
     <img src="GAMBAR/shopee.jpg" alt="" />
     <div class="perusahaan"><h2> Market Research Analyst </h2>
@@ -738,7 +788,7 @@
 
     <!-- IT and Software -->
 
-    <div class="content2">
+    <div  class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/shopee.jpg" alt="" />
         <div class="perusahaan"><h2> Software <br> Development </h2>
@@ -761,7 +811,7 @@
         </div>
     
         
-    <div class="content2">
+    <div  class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/pt.png" alt="" />
         <div class="perusahaan"><h2> IT Full Stack <br>
@@ -785,7 +835,7 @@
         </div>
     
         
-    <div class="content2">
+    <div  class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/pt1.png" alt="" />
         <div class="perusahaan"><h2> Cybersecurity <br>Analyst </h2>
@@ -808,7 +858,7 @@
         </div>
     
         
-    <div class="content2">
+    <div  class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/Telkom.png" alt="" />
         <div class="perusahaan"><h2>Network <br>Administrator </h2>
@@ -831,7 +881,7 @@
         </div>
     
         
-    <div class="content2">
+    <div  class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/pt3.png" alt="" />
         <div class="perusahaan"><h2> Professional Development </h2>
@@ -855,7 +905,7 @@
     
     
         
-    <div class="content2">
+    <div class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/tokopedia.webp" alt="" />
         <div class="perusahaan"><h2> Technology Infrastructure Manager </h2>
@@ -878,7 +928,7 @@
         </div>
     
         
-    <div class="content2">
+    <div  class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/bca.jpg" alt="" />
         <div class="perusahaan"><h2> Administrator <br> Sistem </h2>
@@ -901,7 +951,7 @@
         </div>
     
         
-    <div class="content2">
+    <div  class="content2 data-filter" data-specialist="it and software">
       <div class="div1">
         <img src="GAMBAR/pt2.png" alt="" />
         <div class="perusahaan"><h2> IT Full Stack <br>
@@ -927,7 +977,7 @@
         
         <!-- Fresh Job -->
 
-        <div class="content2">
+        <div  class="content2 data-filter" data-specialist="fresh job">
           <div class="div1">
             <img src="GAMBAR/shopee.jpg" alt="" />
             <div class="perusahaan"><h2> Software <br> Development </h2>
@@ -950,7 +1000,7 @@
             </div>
         
             
-        <div class="content2">
+        <div class="content2 data-filter" data-specialist="fresh job">
           <div class="div1">
             <img src="GAMBAR/pt.png" alt="" />
             <div class="perusahaan"><h2> IT Full Stack <br>
@@ -973,7 +1023,7 @@
             </div>
             </div>
         
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="fresh job">
               <div class="div1">
                 <img src="GAMBAR/Bi.jpg" alt="" />
                 <div class="perusahaan"><h2> Data Analytics <br>Manager</h2>
@@ -996,7 +1046,7 @@
                 </div>
                 </div>
       
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="fresh job">
                   <div class="div1">
                     <img src="GAMBAR/Mandiri.png" alt="" />
                     <div class="perusahaan"><h2>Universal Banker <br> Development</h2>
@@ -1018,7 +1068,7 @@
                     </div>
                     </div>
             
-                    <div class="content2">
+                    <div class="content2 data-filter" data-specialist="fresh job">
                       <div class="div1">
                         <img src="GAMBAR/pt4.png" alt="" />
                         <div class="perusahaan"><h2>Database <br> Administrator
@@ -1042,7 +1092,7 @@
                         </div>
                     
                         
-                    <div class="content2">
+                    <div class="content2 data-filter" data-specialist="fresh job">
                       <div class="div1">
                         <img src="GAMBAR/sbux.png" alt="" />
                         <div class="perusahaan"><h2> Barista <br> ( Part Time ) </h2>
@@ -1065,7 +1115,7 @@
                         </div>
                     
             
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="fresh job">
         <div class="div1">
           <img src="GAMBAR/NRI.jpg" alt="" />
           <div class="perusahaan"><h2>Data Engineer <br>(DE) </h2>
@@ -1089,7 +1139,7 @@
 
 
           
-      <div class="content2">
+      <div class="content2 data-filter" data-specialist="fresh job">
         <div class="div1">
           <img src="GAMBAR/tokopedia.webp" alt="" />
           <div class="perusahaan"><h2>Digital Marketing Specialist </h2>
@@ -1112,7 +1162,7 @@
           </div>
             <!-- accounting and finance -->
 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/pt4.png" alt="" />
                 <div class="perusahaan"><h2> Financial and Accounting Specialist
@@ -1136,7 +1186,7 @@
                 </div>
             
                 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/Mandiri.png" alt="" />
                 <div class="perusahaan"><h2>Management <br>Consultant
@@ -1160,7 +1210,7 @@
                 </div>
             
                 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/Bi.jpg" alt="" />
                 <div class="perusahaan"><h2> Financial and Accounting Specialist
@@ -1184,7 +1234,7 @@
                 </div>
             
                 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/bca.jpg" alt="" />
                 <div class="perusahaan"><h2>Digital Marketing <br>Specialist
@@ -1208,7 +1258,7 @@
                 </div>
             
                 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/Mandiri.png" alt="" />
                 <div class="perusahaan"><h2> Accounting <br>Specialist
@@ -1233,7 +1283,7 @@
             
             
                 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/pt4.png" alt="" />
                 <div class="perusahaan"><h2>  Management <br>Consultant
@@ -1257,7 +1307,7 @@
                 </div>
             
                 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/bca.jpg" alt="" />
                 <div class="perusahaan"><h2> Accounting <br> Specialist
@@ -1281,7 +1331,7 @@
                 </div>
             
                 
-            <div class="content2">
+            <div class="content2 data-filter" data-specialist="acaounting">
               <div class="div1">
                 <img src="GAMBAR/Bi.jpg" alt="" />
                 <div class="perusahaan"><h2> Digital Marketing Specialist </h2>
@@ -1304,7 +1354,7 @@
                 </div>
 
                 <!-- senior level job -->
-                <div class="content2">
+                <div class="content2 data-filter" data-specialist="senior level job">
                   <div class="div1">
                     <img src="GAMBAR/freeport.png" alt="" />
                     <div class="perusahaan"><h2> Information <br> Technology </h2>
@@ -1327,7 +1377,7 @@
                     </div>
                 
                     
-                <div class="content2">
+                <div class="content2 data-filter" data-specialist="senior level job">
                   <div class="div1">
                     <img src="GAMBAR/Telkom.png" alt="" />
                     <div class="perusahaan"><h2> Software <br> Development</h2>
@@ -1349,7 +1399,7 @@
                     </div>
                     </div>
 
-                <div class="content2">
+                <div class="content2 data-filter" data-specialist="senior level job">
                   <div class="div1">
                     <img src="GAMBAR/Pertamina.jpg" alt="" />
                     <div class="perusahaan"><h2>Graphic and Multimedia Designer</h2>
@@ -1372,7 +1422,7 @@
                     </div>
                 
                      
-                      <div class="content2">
+                      <div class="content2 data-filter" data-specialist="senior level job">
                         <div class="div1">
                           <img src="GAMBAR/shopee.jpg" alt="" />
                           <div class="perusahaan"><h2> Graphic and Multimedia Designer</h2>
@@ -1394,7 +1444,7 @@
                           </div>
                           </div>
 
-                          <div class="content2">
+                          <div class="content2 data-filter" data-specialist="senior level job">
                             <div class="div1">
                               <img src="GAMBAR/tokopedia.webp" alt="" />
                               <div class="perusahaan"><h2> Technology Infrastructure Manager </h2>
@@ -1417,7 +1467,7 @@
                               </div>
                           
                               
-                          <div class="content2">
+                          <div class="content2 data-filter" data-specialist="senior level job">
                             <div class="div1">
                               <img src="GAMBAR/bca.jpg" alt="" />
                               <div class="perusahaan"><h2> Administrator <br> Sistem </h2>
@@ -1440,7 +1490,7 @@
                               </div>
 
                                   
-    <div class="content2">
+    <div class="content2 data-filter" data-specialist="senior level job">
       <div class="div1">
         <img src="GAMBAR/pt.png" alt="" />
         <div class="perusahaan"><h2> IT Full Stack <br>
@@ -1464,7 +1514,7 @@
         </div>
     
         
-    <div class="content2">
+    <div class="content2 data-filter" data-specialist="senior level job">
       <div class="div1">
         <img src="GAMBAR/pt1.png" alt="" />
         <div class="perusahaan"><h2> Cybersecurity <br>Analyst </h2>
@@ -1493,7 +1543,7 @@
 
                     <!-- intership and junior level -->
 
-                    <div class="content2">
+                    <div class="content2 data-filter" data-specialist="junior level job">
                       <div class="div1">
                         <img src="GAMBAR/pt4.png" alt="" />
                         <div class="perusahaan"><h2>Database <br> Administrator
@@ -1517,7 +1567,7 @@
                         </div>
                     
                         
-                    <div class="content2">
+                    <div class="content2 data-filter" data-specialist="junior level job">
                       <div class="div1">
                         <img src="GAMBAR/sbux.png" alt="" />
                         <div class="perusahaan"><h2> Barista <br> ( Part Time ) </h2>
@@ -1540,7 +1590,7 @@
                         </div>
                     
                         
-                    <div class="content2">
+                    <div class="content2 data-filter" data-specialist="junior level job">
                       <div class="div1">
                         <img src="GAMBAR/idn.jpg" alt="" />
                         <div class="perusahaan"><h2> Staff Outlet <br> Indomaret</h2>
@@ -1563,7 +1613,7 @@
                         </div>
                     
                         
-                    <div class="content2">
+                    <div class="content2 data-filter" data-specialist="junior level job">
                       <div class="div1">
                         <img src="GAMBAR/kfc.png" alt="" />
                         <div class="perusahaan"><h2> Crew Outlet <br> (Part Time) </h2>
@@ -1584,6 +1634,98 @@
                           </div>
                         </div>
                         </div>
+
+                        <div class="content2 data-filter" data-specialist="junior level job">
+                          <div class="div1">
+                            <img src="GAMBAR/idn.jpg" alt="" />
+                            <div class="perusahaan"><h2>  Staff Outlet <br> Indomaret  </h2>
+                              <h5>PT INDOMARCO PRIMASTANA<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
+                              <div class="apply"><div><h6>Apply before 5 Jun</h6></div>
+                              <div class="type"><h6>Intership/Part Time</h6></div> </div>  
+                            </div>
+                            <div class="div2">
+                              <ul>
+                                <li> <i class="fas fa-map-marker-alt"></i>Bali, Indonesia</li>
+                                <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
+                                <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
+                                <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br>3 jam lalu</li>
+                              </ul>
+                              <div class="button_konten">
+                                <button class="button_view"> <a href="apply.html">Apply</a></button>
+                                <button class="button_view"><a href="viewport45.html">View Post</a></button>
+                              </div>
+                            </div>
+                            </div>
+                    
+                    
+                        
+                            <div class="content2 data-filter" data-specialist="junior level job">
+                              <div class="div1">
+                                <img src="GAMBAR/kfc.png" alt="" />
+                                <div class="perusahaan"><h2> Crew Outlet <br>(Part Time) </h2>
+                                  <h5>PT FAST FOOD INDONESIA<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
+                                  <div class="apply"><div><h6>Apply before 10 Jun</h6></div>
+                                  <div class="type"><h6>Intership/Part Time</h6></div> </div>   
+                                </div>
+                                <div class="div2">
+                                  <ul>
+                                    <li> <i class="fas fa-map-marker-alt"></i>Yogyakarta, Indonesia</li>
+                                    <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
+                                    <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
+                                    <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br> 9 jam lalu</li>
+                                  </ul>
+                                  <div class="button_konten">
+                                    <button class="button_view"> <a href="apply.html">Apply</a></button>
+                                    <button class="button_view"><a href="viewport46.html">View Post</a></button>
+                                  </div>
+                                </div>
+                                </div>
+                    
+                        
+                    <div class="content2 data-filter" data-specialist="junior level job">
+                      <div class="div1">
+                        <img src="GAMBAR/pt4.png" alt="" />
+                        <div class="perusahaan"><h2> DevOps <br> Engineer
+                        </h2>
+                          <h5>PT VANGUARD ENTERPRISES<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
+                          <div class="apply"><div><h6>Apply before 10 Jun</h6></div>
+                          <div class="type"><h6>Intership/Part Time</h6></div> </div>   
+                        </div>
+                        <div class="div2">
+                          <ul>
+                            <li> <i class="fas fa-map-marker-alt"></i>Jakarta Pusat, Indonesia</li>
+                            <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
+                            <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
+                            <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br> 14 jam lalu</li>
+                          </ul>
+                          <div class="button_konten">
+                            <button class="button_view">Apply</button>
+                            <button class="button_view"><a href="viewport47.html">View Post</a></button>
+                          </div>
+                        </div>
+                        </div>
+                    
+                        <div class="content2 data-filter" data-specialist="junior level job">
+                          <div class="div1">
+                            <img src="GAMBAR/sbux.png" alt="" />
+                            <div class="perusahaan"><h2> Barista <br> (Part Time) </h2>
+                              <h5>PT. SARI COFFEE INDONESIA<i class="fas fa-check-circle" style="color: #0400ff;"></i></h5></div>
+                              <div class="apply"><div><h6>Apply before 7 Sep</h6></div>
+                              <div class="type"><h6>Intership/Part Time</h6></div> </div>  
+                            </div>
+                            <div class="div2">
+                              <ul>
+                                <li> <i class="fas fa-map-marker-alt"></i>Surabaya, Indonesia</li>
+                                <li> <i class="fas fa-wallet"></i>Gaji Tidak Diumumkan</li>
+                                <li><i class="fas fa-briefcase"></i>Penuh waktu</li>
+                                <li> <i class="fas fa-search"></i> Rekruter terakhir aktif <br> 2 hari lalu</li>
+                              </ul>
+                              <div class="button_konten">
+                                <button class="button_view"> <a href="apply.html">Apply</a></button>
+                                <button class="button_view"><a href="viewport48.html">View Post</a></button>
+                              </div>
+                            </div>
+                            </div>
                     
                         
                         
@@ -1602,12 +1744,12 @@
  
     </div> 
 
-      <div class="merubah-karir">
+      <div class="merubah-karir fade">
         <h3>
           Merubah Karir 
         </h3>
       </div>
-      <a href="informasi.html"> <div class="container-karir">
+      <a href="informasi.html"> <div class="container-karir fade">
                
         <div class="container-div">
           <div class="container-div1">
@@ -1653,12 +1795,12 @@
     </div></a>
               
 
-            <div class="merubah-karir">
+            <div class="merubah-karir fade">
               <h3>
                   Informasi
               </h3>
             </div>
-            <a href="informasi3.html"><div class="container-karir">
+            <a href="informasi3.html"><div class="container-karir fade">
                      
               <div class="container-div">
                 <div class="container-div1">
@@ -1704,7 +1846,7 @@
           </div></a>
                     
       
-     <div class="konten-maps">
+     <div class="konten-maps fade">
       <div class="container-title">
         <h1>Our Office</h1>
       </div>
@@ -1716,7 +1858,7 @@
             src="https://embed.waze.com/iframe?zoom=16&lat=-8.592284&lon=115.261075&pin=1"
             allowfullscreen
           ></iframe>
-          <img src="https://www.emporioarchitect.com/upload/portofolio/jasa-arsitek-desain-kantor-bapak-wiantono-bekasi-142358367040820023919-0.jpg" alt="">
+          
         </div>
 
       </div>
@@ -1730,7 +1872,7 @@
 
 
           <section>
-            <footer class="footer">
+            <footer class="footer fade">
               <div class="footer-top">
                 <div class="footer3">
                   <h1 style="display: flex; justify-content: center;align-items: center; font-size: 35px;">
